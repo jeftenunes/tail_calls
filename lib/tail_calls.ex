@@ -35,6 +35,7 @@ defmodule TailCalls do
 
   def factorial_tail_call(int), do: do_factorial_tail_call(int, int - 1)
 
+  defp do_factorial_tail_call(0, _), do: 1
   defp do_factorial_tail_call(result, 0), do: result
 
   defp do_factorial_tail_call(result, prox) do

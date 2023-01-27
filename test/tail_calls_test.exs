@@ -31,6 +31,6 @@ defmodule TailCallsTest do
   end
 
   test "tail call factorial of 0 is 1" do
-    assert TailCalls.factorial_tail_call(0) == 120
+    assert TailCalls.factorial_tail_call(0) == 1
   end
 end
